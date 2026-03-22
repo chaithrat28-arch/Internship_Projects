@@ -1,0 +1,120 @@
+Stack Data Structure in C++
+
+# Objective
+
+To design and implement a **Stack Data Structure in C++** and perform basic stack operations such as **Push, Pop, Peek, Display and Exit** using the **LIFO (Last In First Out)** principle.
+
+---
+
+# 2. Design Flow
+
+1. Start the program.
+
+2. Declare a stack array and top variable.
+
+3. Initialize top = -1 (stack empty).
+
+4. Display menu options:
+
+   * Push
+   * Pop
+   * Peek
+   * Display
+   * Exit
+
+5. Accept user choice.
+
+6. Perform operation based on choice:
+
+   **Push**
+
+   * Check if stack is full.
+   * If full → Display **Stack Overflow**.
+   * Else → Increment `top` and insert element.
+
+   **Pop**
+
+   * Check if stack is empty.
+   * If empty → Display **Stack Underflow**.
+   * Else → Remove top element and decrement `top`.
+
+   **Peek**
+
+   * Display the top element.
+
+   **Display**
+
+   * Print all stack elements from top to bottom.
+
+7. Repeat the process until user selects **Exit**.
+
+8. Stop the program.
+
+---
+
+# Flowchart
+
+```
+START
+  |
+Initialize top = -1
+  |
+Display Menu
+(Push / Pop / Peek / Display / Exit)
+  |
+Read Choice
+  |
+--------------------------------
+| Push | Pop | Peek | Display |
+--------------------------------
+
+  |
+Exit?
+ |No
+ |----> Repeat Menu
+ |
+Yes
+ |
+END
+
+---
+
+# Features of the Project
+
+* Implements **Stack using C++**.
+* Uses **LIFO principle**.
+* Supports **Push, Pop, Peek and Display operations**.
+* Handles **Overflow and Underflow conditions**.
+* Menu-driven program for easy user interaction.
+---
+
+## How My Stack Code is Helpful in Real Time
+
+1. **Undo / Redo Operations**
+
+   * Applications like text editors store user actions in a **stack**.
+   * Your **push operation** adds new actions.
+   * Your **pop operation** removes the last action when **Undo** is pressed.
+
+2. **Browser Navigation**
+
+   * Web browsers maintain a **history stack**.
+   * Each visited page is **pushed into the stack**.
+   * Pressing the **Back button pops the last page** from the stack.
+
+3. **Function Call Management**
+
+   * In programming languages like **C and C++**, the system uses a **call stack**.
+   * Every function call is **pushed** to the stack.
+   * When the function completes, it is **popped** from the stack.
+
+4. **Expression Evaluation**
+
+   * Compilers and calculators use stacks to **evaluate mathematical expressions**.
+   * Operators and operands are pushed and popped to calculate results.
+
+5. **Data Reversal**
+
+   * Stack logic is used to **reverse strings or data** in many applications.
+
+---
